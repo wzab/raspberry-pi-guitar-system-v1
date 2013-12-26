@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:cs5343_4-cached-symbols
 LIBS:power
 LIBS:device
 LIBS:transistors

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:wifi-guitar-extension-cached-symbols
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "3 nov 2013"
+Date "26 dec 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -61,10 +62,10 @@ RPI_SDA
 Text Label 6450 3200 0    60   ~ 0
 RPI_SCL
 $Comp
-L R R6
+L R R7
 U 1 1 526F85A4
 P 7150 3100
-F 0 "R6" V 7150 3200 40  0000 C CNN
+F 0 "R7" V 7150 3200 40  0000 C CNN
 F 1 "3k" V 7157 3101 40  0000 C CNN
 F 2 "~" V 7080 3100 30  0000 C CNN
 F 3 "~" H 7150 3100 30  0000 C CNN
@@ -72,10 +73,10 @@ F 3 "~" H 7150 3100 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R7
+L R R8
 U 1 1 526F85B3
 P 7150 3200
-F 0 "R7" V 7150 3300 40  0000 C CNN
+F 0 "R8" V 7150 3300 40  0000 C CNN
 F 1 "3k" V 7157 3201 40  0000 C CNN
 F 2 "~" V 7080 3200 30  0000 C CNN
 F 3 "~" H 7150 3200 30  0000 C CNN
@@ -395,12 +396,12 @@ $EndComp
 $Comp
 L GND #PWR010
 U 1 1 52742977
-P 2500 2200
-F 0 "#PWR010" H 2500 2200 30  0001 C CNN
-F 1 "GND" H 2500 2130 30  0001 C CNN
-F 2 "" H 2500 2200 60  0000 C CNN
-F 3 "" H 2500 2200 60  0000 C CNN
-	1    2500 2200
+P 2550 2000
+F 0 "#PWR010" H 2550 2000 30  0001 C CNN
+F 1 "GND" H 2550 1930 30  0001 C CNN
+F 2 "" H 2550 2000 60  0000 C CNN
+F 3 "" H 2550 2000 60  0000 C CNN
+	1    2550 2000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -427,6 +428,143 @@ F 1 "CONN_10X2" V 9000 3900 50  0000 C CNN
 F 2 "~" H 9000 4000 60  0000 C CNN
 F 3 "~" H 9000 4000 60  0000 C CNN
 	1    9000 4000
+	1    0    0    -1  
+$EndComp
+Text Label 8550 3950 2    60   ~ 0
+GND
+Text Label 9450 3950 0    60   ~ 0
+GND
+Text Label 8550 3550 2    60   ~ 0
+V3,3
+Text Label 9450 3550 0    60   ~ 0
+V3,3
+Text Label 8550 3650 2    60   ~ 0
+POT_1
+Text Label 9450 3650 0    60   ~ 0
+POT_2
+Text Label 8550 3750 2    60   ~ 0
+POT_3
+Text Label 9450 3750 0    60   ~ 0
+POT_4
+Text Label 8550 3850 2    60   ~ 0
+POT_5
+Text Label 9450 3850 0    60   ~ 0
+POT_6
+Text Label 8550 4250 2    60   ~ 0
+SW5
+Text Label 9450 4250 0    60   ~ 0
+SW6
+Text Label 8550 4050 2    60   ~ 0
+SW1
+Text Label 9450 4050 0    60   ~ 0
+SW2
+Text Label 8550 4150 2    60   ~ 0
+SW3
+Text Label 9450 4150 0    60   ~ 0
+SW4
+Text Label 8550 4350 2    60   ~ 0
+SW7
+Text Label 8550 4450 2    60   ~ 0
+GND
+Text Label 9450 4350 0    60   ~ 0
+SW8
+Text Label 9450 4450 0    60   ~ 0
+GND
+$Comp
+L C C5
+U 1 1 52762903
+P 7350 4950
+F 0 "C5" H 7350 5050 40  0000 L CNN
+F 1 "1u" H 7356 4865 40  0000 L CNN
+F 2 "~" H 7388 4800 30  0000 C CNN
+F 3 "~" H 7350 4950 60  0000 C CNN
+	1    7350 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 52762912
+P 7350 5250
+F 0 "#PWR012" H 7350 5250 30  0001 C CNN
+F 1 "GND" H 7350 5180 30  0001 C CNN
+F 2 "" H 7350 5250 60  0000 C CNN
+F 3 "" H 7350 5250 60  0000 C CNN
+	1    7350 5250
+	1    0    0    -1  
+$EndComp
+Text Label 7300 4700 2    60   ~ 0
+V3,3
+Text Label 6350 1950 0    60   ~ 0
+SW8
+$Comp
+L C C6
+U 1 1 52766461
+P 7900 4950
+F 0 "C6" H 7900 5050 40  0000 L CNN
+F 1 "1u" H 7906 4865 40  0000 L CNN
+F 2 "~" H 7938 4800 30  0000 C CNN
+F 3 "~" H 7900 4950 60  0000 C CNN
+	1    7900 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 52766467
+P 7900 5250
+F 0 "#PWR013" H 7900 5250 30  0001 C CNN
+F 1 "GND" H 7900 5180 30  0001 C CNN
+F 2 "" H 7900 5250 60  0000 C CNN
+F 3 "" H 7900 5250 60  0000 C CNN
+	1    7900 5250
+	1    0    0    -1  
+$EndComp
+Text Label 7850 4700 2    60   ~ 0
+V3,3
+NoConn ~ 2850 5250
+NoConn ~ 1350 5350
+Text Notes 1300 4700 0    60   ~ 0
+Analog input and ADC
+$Comp
+L R R5
+U 1 1 527674F2
+P 5400 5850
+F 0 "R5" V 5480 5850 40  0000 C CNN
+F 1 "10k" V 5407 5851 40  0000 C CNN
+F 2 "~" V 5330 5850 30  0000 C CNN
+F 3 "~" H 5400 5850 30  0000 C CNN
+	1    5400 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 527674FF
+P 5800 5850
+F 0 "R6" V 5880 5850 40  0000 C CNN
+F 1 "10k" V 5807 5851 40  0000 C CNN
+F 2 "~" V 5730 5850 30  0000 C CNN
+F 3 "~" H 5800 5850 30  0000 C CNN
+	1    5800 5850
+	1    0    0    -1  
+$EndComp
+Text Label 5500 5500 0    60   ~ 0
+V3,3
+Text Label 5900 6250 0    60   ~ 0
+RPI_PCM_CLK
+Text Label 5900 6400 0    60   ~ 0
+RPI_PCM_FS
+Text Notes 3950 5050 0    60   ~ 0
+Resistors configuring the ADC speed. For 48kHz sampling with\n12.288MHz crystal, we should select SSM with 256x multiplication\nfactor, so neither R5 nor R6 should be mounted.\nR4 should be mounted, as it enforces the Master Mode\n
+Text Notes 750  3400 0    60   ~ 0
+Please note, that P2 is mounted on the same side of PCB\nas P1, but pin numbers are located as it was mounted\non the oposite side!
+$Comp
+L R R4
+U 1 1 52BC0760
+P 5000 5850
+F 0 "R4" V 5080 5850 40  0000 C CNN
+F 1 "10k" V 5007 5851 40  0000 C CNN
+F 2 "~" V 4930 5850 30  0000 C CNN
+F 3 "~" H 5000 5850 30  0000 C CNN
+	1    5000 5850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -594,10 +732,6 @@ Wire Wire Line
 Wire Wire Line
 	1300 2300 1450 2300
 Wire Wire Line
-	2250 2100 2500 2100
-Wire Wire Line
-	2500 2100 2500 2200
-Wire Wire Line
 	2250 2500 2500 2500
 Wire Wire Line
 	2500 2500 2500 2600
@@ -612,48 +746,14 @@ Wire Wire Line
 	2250 2900 2700 2900
 Wire Wire Line
 	8600 3550 8350 3550
-Text Label 8550 3950 2    60   ~ 0
-GND
 Wire Wire Line
 	9400 3550 9700 3550
-Text Label 9450 3950 0    60   ~ 0
-GND
 Wire Wire Line
 	8600 4450 8400 4450
 Wire Wire Line
 	9400 4450 9700 4450
-Text Label 8550 3550 2    60   ~ 0
-V3,3
-Text Label 9450 3550 0    60   ~ 0
-V3,3
 Wire Wire Line
 	8600 3650 8350 3650
-Text Label 8550 3650 2    60   ~ 0
-POT_1
-Text Label 9450 3650 0    60   ~ 0
-POT_2
-Text Label 8550 3750 2    60   ~ 0
-POT_3
-Text Label 9450 3750 0    60   ~ 0
-POT_4
-Text Label 8550 3850 2    60   ~ 0
-POT_5
-Text Label 9450 3850 0    60   ~ 0
-POT_6
-Text Label 8550 4250 2    60   ~ 0
-SW5
-Text Label 9450 4250 0    60   ~ 0
-SW6
-Text Label 8550 4050 2    60   ~ 0
-SW1
-Text Label 9450 4050 0    60   ~ 0
-SW2
-Text Label 8550 4150 2    60   ~ 0
-SW3
-Text Label 9450 4150 0    60   ~ 0
-SW4
-Text Label 8550 4350 2    60   ~ 0
-SW7
 Wire Wire Line
 	8600 3750 8350 3750
 Wire Wire Line
@@ -684,126 +784,71 @@ Wire Wire Line
 	9400 4250 9700 4250
 Wire Wire Line
 	9400 4350 9700 4350
-Text Label 8550 4450 2    60   ~ 0
-GND
-Text Label 9450 4350 0    60   ~ 0
-SW8
-Text Label 9450 4450 0    60   ~ 0
-GND
-$Comp
-L C C5
-U 1 1 52762903
-P 7350 4950
-F 0 "C5" H 7350 5050 40  0000 L CNN
-F 1 "1u" H 7356 4865 40  0000 L CNN
-F 2 "~" H 7388 4800 30  0000 C CNN
-F 3 "~" H 7350 4950 60  0000 C CNN
-	1    7350 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR012
-U 1 1 52762912
-P 7350 5250
-F 0 "#PWR012" H 7350 5250 30  0001 C CNN
-F 1 "GND" H 7350 5180 30  0001 C CNN
-F 2 "" H 7350 5250 60  0000 C CNN
-F 3 "" H 7350 5250 60  0000 C CNN
-	1    7350 5250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7350 5150 7350 5250
 Wire Wire Line
 	7350 4750 7350 4700
 Wire Wire Line
 	7350 4700 7200 4700
-Text Label 7300 4700 2    60   ~ 0
-V3,3
-Text Label 6350 1950 0    60   ~ 0
-SW8
-$Comp
-L C C6
-U 1 1 52766461
-P 7900 4950
-F 0 "C6" H 7900 5050 40  0000 L CNN
-F 1 "1u" H 7906 4865 40  0000 L CNN
-F 2 "~" H 7938 4800 30  0000 C CNN
-F 3 "~" H 7900 4950 60  0000 C CNN
-	1    7900 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR013
-U 1 1 52766467
-P 7900 5250
-F 0 "#PWR013" H 7900 5250 30  0001 C CNN
-F 1 "GND" H 7900 5180 30  0001 C CNN
-F 2 "" H 7900 5250 60  0000 C CNN
-F 3 "" H 7900 5250 60  0000 C CNN
-	1    7900 5250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7900 5150 7900 5250
 Wire Wire Line
 	7900 4750 7900 4700
 Wire Wire Line
 	7900 4700 7750 4700
-Text Label 7850 4700 2    60   ~ 0
-V3,3
 Wire Wire Line
 	2650 5250 2850 5250
-NoConn ~ 2850 5250
-NoConn ~ 1350 5350
 Wire Wire Line
 	1500 5350 1350 5350
-Text Notes 1300 4700 0    60   ~ 0
-Analog input and ADC
+Wire Wire Line
+	5800 6100 5800 6250
+Wire Wire Line
+	5800 6250 6250 6250
+Wire Wire Line
+	5400 6100 5400 6400
+Wire Wire Line
+	5400 6400 6250 6400
+Wire Wire Line
+	5400 5600 5400 5500
+Wire Wire Line
+	5000 5500 5800 5500
+Wire Wire Line
+	5800 5500 5800 5600
+Wire Wire Line
+	5000 5600 5000 5500
+Connection ~ 5400 5500
+Wire Wire Line
+	5000 6100 5000 6550
+Wire Wire Line
+	5000 6550 6250 6550
+Text Label 5900 6550 0    60   ~ 0
+RPI_PCM_DIN
+Wire Wire Line
+	2250 2100 2950 2100
+Wire Wire Line
+	2400 2100 2400 1950
+Wire Wire Line
+	2400 1950 2550 1950
+Wire Wire Line
+	2550 1950 2550 2000
+Wire Wire Line
+	2250 2200 2950 2200
+Wire Wire Line
+	2250 2300 2950 2300
+Connection ~ 2400 2100
+Text Label 2500 2200 0    60   ~ 0
+RPI_TXD
+Text Label 2500 2300 0    60   ~ 0
+RPI_RXD
 $Comp
-L R R4
-U 1 1 527674F2
-P 4850 5850
-F 0 "R4" V 4930 5850 40  0000 C CNN
-F 1 "10k" V 4857 5851 40  0000 C CNN
-F 2 "~" V 4780 5850 30  0000 C CNN
-F 3 "~" H 4850 5850 30  0000 C CNN
-	1    4850 5850
+L CONN_3 K1
+U 1 1 52BC5A77
+P 3300 2200
+F 0 "K1" V 3250 2200 50  0000 C CNN
+F 1 "CONN_3" V 3350 2200 40  0000 C CNN
+F 2 "~" H 3300 2200 60  0000 C CNN
+F 3 "~" H 3300 2200 60  0000 C CNN
+	1    3300 2200
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R5
-U 1 1 527674FF
-P 5250 5850
-F 0 "R5" V 5330 5850 40  0000 C CNN
-F 1 "10k" V 5257 5851 40  0000 C CNN
-F 2 "~" V 5180 5850 30  0000 C CNN
-F 3 "~" H 5250 5850 30  0000 C CNN
-	1    5250 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 6100 5250 6250
-Wire Wire Line
-	5250 6250 5700 6250
-Wire Wire Line
-	4850 6100 4850 6400
-Wire Wire Line
-	4850 6400 5700 6400
-Wire Wire Line
-	4850 5600 4850 5500
-Wire Wire Line
-	4850 5500 5250 5500
-Wire Wire Line
-	5250 5500 5250 5600
-Text Label 4950 5500 0    60   ~ 0
-V3,3
-Text Label 5350 6250 0    60   ~ 0
-RPI_PCM_CLK
-Text Label 5350 6400 0    60   ~ 0
-RPI_PCM_FS
-Text Notes 3950 5050 0    60   ~ 0
-Resistors configuring the ADC speed. For 48kHz sampling with\n12.288MHz crystal, we should select SSM with 256x multiplication\nfactor, so none of those resistors should be mounted\n
-Text Notes 750  3400 0    60   ~ 0
-Please note, that P2 is mounted on the sime side of PCB\nas P1, but pin numbers are located as it was mounted\non the oposite side!
 $EndSCHEMATC
